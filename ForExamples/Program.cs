@@ -1,4 +1,4 @@
-﻿namespace _01ForExamples
+namespace _01ForExamples
 {
 	internal class Program
 	{
