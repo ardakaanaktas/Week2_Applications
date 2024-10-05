@@ -1,4 +1,4 @@
-﻿namespace ForExamples
+namespace ForExamples
 {
 	internal class Program
 	{
@@ -21,8 +21,8 @@
 		{
 			#region Soru1
 			Console.WriteLine("--------------1.Soru------------------");
-			for (int i = 0; i < 10; i++)
-            {
+			for (int i = 0; i < 10; i++)//0 dan 10 a kadar döngü içeriği döndürüyoruz.
+			{
                 Console.WriteLine("Kendime inanıyorum, ben bu yazılım işini hallederim!");
             }
             #endregion
@@ -33,8 +33,8 @@
 			Console.WriteLine("--------------2.Soru------------------");
 			for (int i = 1; i <= 20; i++)
             {
-                Console.Write($"{i} ");
-            }
+                Console.Write($"{i} ");//1 den 20 ye kadar olan sayıları yazdırıyoruz.
+			}
 			Console.WriteLine();
 			#endregion
 
@@ -42,11 +42,11 @@
 
 			#region Soru3
 			Console.WriteLine("--------------3.Soru------------------");
-			for (int i = 1; i <= 20; i++)
-            {
-                if (i % 2 == 0)
-                {
-					Console.Write($"{i} ");
+			for (int i = 1; i <= 20; i++)//1 den 20 ye kadar olan sayıları döngü içerisinde kontrol ediyoruz.
+			{
+                if (i % 2 == 0)//Çift sayıları buluyoruz.
+				{
+					Console.Write($"{i} ");//Çift sayıları yazdırıyoruz.
 				}
             }
             Console.WriteLine();
@@ -55,9 +55,9 @@
 			#region Soru4
 			Console.WriteLine("--------------4.Soru------------------");
 			int total = 0;
-			for (int i = 50;i <= 150; i++)
+			for (int i = 50;i <= 150; i++)//50 den 150 ye kadar olan sayıları döngü içerisinde kontrol ediyoruz.
 			{
-				total = total + i;
+				total = total + i;//50 ile 150 arasındaki sayıları topluyoruz.
 			}
             Console.WriteLine("50 - 150 arasında ki sayıların toplamı => " + total);
 			#endregion
@@ -68,11 +68,11 @@
 			int evenTotal = 0;
 			for (int i = 1; i <= 120; i++)
 			{
-				if (i % 2 == 0)
+				if (i % 2 == 0)//Çift sayıları buluyoruz.
 				{
 					evenTotal = evenTotal + i;
 				}
-				else
+				else//Tek sayıları buluyoruz.
 				{
 					oddTotal = oddTotal + i;
 				}
